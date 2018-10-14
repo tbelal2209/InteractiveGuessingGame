@@ -1,0 +1,31 @@
+package TazwarBelal;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        // write your code here
+      
+
+
+
+
+        System.out.println("Enter a number");
+        Scanner input= new Scanner(System.in);
+        int num = Integer.parseInt(input.nextLine());
+        double x = Math.random();
+        int y = (int) (x * 101);
+        System.out.println("x=" +y);
+        while (!(y == num)) {
+            if (y > 50) {
+                System.out.println("That number is between 50 and 100");
+            }
+            else if (y < 50) {
+                System.out.println("That number is between 1 and 50");
+            }
+
+        }
+        System.out.println("That is correct");
+
+    }
