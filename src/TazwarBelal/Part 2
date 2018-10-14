@@ -6,27 +6,23 @@ public class Main {
 
     public static void main(String[] args) {
         // write your code here
-        Scanner input = new Scanner(System.in) ;
-        System.out.print("What is your name?");
-        String name = input.nextLine();
-        System.out.println("Hello"+" "+name+" "+"Would you like type 1 or type 2");
-        String Answer = input.nextLine();
-        if(Answer.equals("1") ) {
-            System.out.print("Guess My Number between 1 and 10");
-
-            while (!(input.nextLine().equals("3"))) {
-                System.out.println("Guess my number again" + " " + name);
+        System.out.println("Enter a number");
+        Scanner input= new Scanner(System.in);
+        int num=0;
+        double x = Math.random();
+        int y = (int) (x * 101);
+        System.out.println("x=" +y);
+        while (!(y == num)) {
+            num = input.nextInt();
+            if (num > y) {
+                System.out.println("your number is too high");
             }
-            System.out.println("You guessed my number" + " " + name);
-        }
-        else if (Answer.equals("2")){
-            System.out.print("Guess My Number between 1 and 100");
-            while (!(input.nextLine().equals("89"))) {
-                System.out.println("Guess my number again" + " " + name);
+            else if (num < y) {
+                System.out.println("your number is too low");
             }
-            System.out.println("You guessed my number" + " " + name);
 
         }
+        System.out.println("That is correct");
 
     }
 }
