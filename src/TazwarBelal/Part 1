@@ -19,10 +19,10 @@ public class Main {
         System.out.println("x=" +y);
         while (!(y == num)) {
             if (y > 50) {
-                System.out.println("That number is between 50 and 100");
+                System.out.println("That number is too high");
             }
             else if (y < 50) {
-                System.out.println("That number is between 1 and 50");
+                System.out.println("That number is too low");
             }
 
         }
